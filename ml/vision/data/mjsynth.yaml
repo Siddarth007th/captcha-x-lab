@@ -1,0 +1,10 @@
+datasets:
+  - name: "MJSynth / Synth90k"
+    source: "https://www.robots.ox.ac.uk/~vgg/data/text/"
+    purpose: "Large-scale synthetic word recognition"
+    version: "1.0"
+    approximate_size: "9,000,000 images"
+    subset_used: "~500k-1M carefully sampled examples"
+    split: "Standard train/val/test"
+    preprocessing: "Resize, grayscale conversion, normalization"
+    rationale: "Used for Stage 1 OCR curriculum training to learn basic character structure."
