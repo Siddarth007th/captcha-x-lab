@@ -151,7 +151,8 @@ class MasterRouter:
                 inputs.input_features, 
                 max_new_tokens=128,
                 return_dict_in_generate=True,
-                output_scores=True
+                output_scores=True,
+                use_cache=False
             )
             predicted_ids = outputs.sequences
             transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]
@@ -181,7 +182,8 @@ class MasterRouter:
                 pixel_values,
                 max_new_tokens=32,
                 return_dict_in_generate=True,
-                output_scores=True
+                output_scores=True,
+                use_cache=False
             )
             generated_ids = outputs.sequences
             generated_text = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
