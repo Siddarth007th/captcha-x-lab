@@ -152,10 +152,14 @@ class MasterRouter:
                 max_new_tokens=128,
                 return_dict_in_generate=True,
                 output_scores=True,
-                use_cache=False
+                use_cache=False,
+                no_repeat_ngram_size=3,
+                repetition_penalty=1.2,
+                language="en",
+                task="transcribe",
             )
             predicted_ids = outputs.sequences
-            transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]
+            transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0].strip()
             
             transition_scores = model.compute_transition_scores(
                 outputs.sequences, outputs.scores, normalize_logits=True

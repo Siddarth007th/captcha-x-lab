@@ -1,5 +1,6 @@
 import sys
 import os
+import mimetypes
 
 # Add project root to path so we can import from ml.master
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../../../"))
@@ -36,16 +37,23 @@ async def predict(
     
     mime_type = file.content_type or ""
 
-    if "image" not in mime_type and "audio" not in mime_type and "wav" not in file.filename.lower():
-        # Fallback to extension heuristic if mime is weird
-        if file.filename.lower().endswith((".png", ".jpg", ".jpeg")):
-            mime_type = "image/png"
-        elif file.filename.lower().endswith((".wav", ".mp3", ".flac", ".ogg")):
-            mime_type = "audio/wav"
-        else:
-            raise HTTPException(status_code=400, detail=f"Unsupported file type: {mime_type}")
+    # If browser didn't send a useful MIME type, infer from filename
+    if "image" not in mime_type and "audio" not in mime_type:
+        guessed, _ = mimetypes.guess_type(file.filename or "")
+        if guessed:
+            mime_type = guessed
+        elif file.filename:
+            fn = file.filename.lower()
+            if fn.endswith((".png", ".jpg", ".jpeg", ".bmp", ".gif", ".webp")):
+                mime_type = "image/png"
+            elif fn.endswith((".wav", ".mp3", ".flac", ".ogg", ".m4a")):
+                mime_type = "audio/wav"
+
+    if "image" not in mime_type and "audio" not in mime_type:
+        raise HTTPException(status_code=400, detail=f"Unsupported file type: {mime_type}. Upload an image or audio file.")
 
     # Use the ML MasterRouter to infer
     result = master_router.infer(file_bytes=file_bytes, mime_type=mime_type, text_query=text_query)
 
     return result
+
