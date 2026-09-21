@@ -1,69 +1,89 @@
-import Image from "next/image";
+import { fetchProjects, fetchExperiments, fetchRuns } from "../lib/api";
+import { MetricCard } from "../components/MetricCard";
+import { Activity, Layers, PlayCircle, BarChart2 } from "lucide-react";
+import { CustomBarChart } from "../components/Charts";
 
-export default function Home() {
+export default async function OverviewPage() {
+  const projects = await fetchProjects();
+  
+  // Aggregate stats across all projects
+  let totalExperiments = 0;
+  let totalRuns = 0;
+  let latestRunDate = new Date(0);
+  
+  const chartData = [];
+
+  for (const project of projects) {
+    const experiments = await fetchExperiments(project.id);
+    totalExperiments += experiments.length;
+    
+    for (const exp of experiments) {
+      const runs = await fetchRuns(exp.id);
+      totalRuns += runs.length;
+      
+      runs.forEach(run => {
+        const runDate = new Date(run.created_at);
+        if (runDate > latestRunDate) {
+          latestRunDate = runDate;
+        }
+      });
+
+      // Sample data for overview chart (using training loss as a generic metric if it exists)
+      if (runs.length > 0) {
+        const latestRun = runs[runs.length - 1];
+        chartData.push({
+          name: exp.name.length > 15 ? exp.name.substring(0, 15) + '...' : exp.name,
+          loss: latestRun.metrics?.train_loss || 0
+        });
+      }
+    }
+  }
+
+  const hasRuns = totalRuns > 0;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="space-y-8 animate-in fade-in duration-500">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight">Platform Overview</h1>
+        <p className="text-muted-foreground mt-2">Central dashboard for CAPTCHA-X Lab telemetry and model performance.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <MetricCard 
+          title="Active Projects" 
+          value={projects.length} 
+          icon={<Layers size={24} />} 
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+        <MetricCard 
+          title="Total Experiments" 
+          value={totalExperiments} 
+          icon={<Activity size={24} />} 
+        />
+        <MetricCard 
+          title="Model Runs" 
+          value={totalRuns} 
+          icon={<PlayCircle size={24} />} 
+        />
+        <MetricCard 
+          title="Last Updated" 
+          value={hasRuns ? latestRunDate.toLocaleDateString() : 'N/A'} 
+          subtitle={hasRuns ? latestRunDate.toLocaleTimeString() : ''}
+          icon={<BarChart2 size={24} />} 
+        />
+      </div>
+
+      {hasRuns && (
+        <div className="mt-8">
+          <h2 className="text-xl font-semibold mb-4">Latest Experiment Losses</h2>
+          <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
+            <CustomBarChart 
+              data={chartData} 
+              xKey="name" 
+              bars={[{ key: 'loss', color: '#3b82f6', name: 'Training Loss' }]} 
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
+      )}
     </div>
   );
 }
