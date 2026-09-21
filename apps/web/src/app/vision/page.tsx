@@ -28,7 +28,7 @@ export default async function VisionPage() {
 
   for (const item of visionExperiments) {
     const run = item.run;
-    if (run.status !== 'completed' || !run.metrics) continue;
+    if (run.status !== 'completed' || !run.metrics || Object.keys(run.metrics).length === 0) continue;
 
     if (run.mixture_config?.is_ood) {
       oodRuns.push(run);

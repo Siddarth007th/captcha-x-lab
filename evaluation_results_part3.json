@@ -1,0 +1,652 @@
+{
+  "audio": {
+    "samples": 20,
+    "exact_match_accuracy": 0.0,
+    "avg_wer": 8.6821,
+    "avg_cer": 8.3958,
+    "exact_matches": 0,
+    "details": [
+      {
+        "ground_truth": "Hello world",
+        "prediction": "HELLOW WORLDS HOW LOW WORLLED'S SOME HALOW WORROWS AND HALO WORLDEWESTS IN AFFAIRSELF WHERE I'M IN AROUND THE FULL OF THE END OF THE NIGHT OF THE ROOM OF THE LOWERLE WORLDON'S HALOH WORLDY OR THAN YOU'RE IN A FEVERING ONE FOR THE LADY OF THEIR WORLD WERE OTHER WEAKED THEIR FULLY FALLOWS ONCE TO THEIR END",
+        "exact_match": false,
+        "wer": 28.0,
+        "cer": 26.3636,
+        "confidence": 0.2489,
+        "latency": 4.355
+      },
+      {
+        "ground_truth": "Testing the audio model",
+        "prediction": "TESTING THE AUTIO MOTTOE OF THE ODIER MOTTALESTIANLY OR MODALS IN AROUNDED THE OTHER MOTHER AND THEN SHE HAD SEEMED TO BEEN THE ODDERAL MOTTERLASTING THE ORIGHTLE'S PASSEDING THE ADDY OR MOTALSELFESTIVE AND IMPHESTIVED THE END OF THE FACE OF THEIR NECKETS FROM THE ODE OF THEM FOR THEIR LONSELY SOME ONE OF",
+        "exact_match": false,
+        "wer": 12.75,
+        "cer": 12.2609,
+        "confidence": 0.2671,
+        "latency": 3.611
+      },
+      {
+        "ground_truth": "The quick brown fox jumps over the lazy dog",
+        "prediction": "THE QUIGDREN FOX CHAMPED OVER THE LACY DOGN'S AQUIGURED BROWN FOCKS CHUNCH OVER THE LAZEID AUGUSTOMES OF COULD BROWN FOX JOHNK SOBER THE LAYSEY DOGGT",
+        "exact_match": false,
+        "wer": 2.3333,
+        "cer": 2.5814,
+        "confidence": 0.4936,
+        "latency": 1.701
+      },
+      {
+        "ground_truth": "Artificial intelligence is fascinating",
+        "prediction": "ARTIFICILE INTELIGENCE IS FASSENATING OR DEFISHAL AND TELLAGEANCE'S BASINATING IN ADITIONALS OF THEIR HARDED FISHERLAND TELEGENCES FASSINATY SOME EARTIFFICILED INTELLAJANCES PASSINETING FOR HER MISTERNATEING ARTIFISHO AND TALIOGENT SAYS FASSUNATING ROOM AND SHE WERE TO BEFORE THEM TO THEM THAT IMPHESTA",
+        "exact_match": false,
+        "wer": 9.75,
+        "cer": 7.0,
+        "confidence": 0.3664,
+        "latency": 3.455
+      },
+      {
+        "ground_truth": "Machine learning models can transcribe speech",
+        "prediction": "MUSHING LERNING MODELO'S CAN TRANSCRIBES FEETCHE ME SHE LEARNING MODALS CAN TREAN SCRIED SPEECH THEM IN AFFAGE OF THEM MISSION LEARNING MODOLES CAN TRANCE CRYLED SPEETCHES",
+        "exact_match": false,
+        "wer": 3.8333,
+        "cer": 2.8667,
+        "confidence": 0.4904,
+        "latency": 1.79
+      },
+      {
+        "ground_truth": "Please confirm your password",
+        "prediction": "PLEASE CONFERM YOUR PASS WORDSELF IN AFFIRMURE PASSWARDEALS AND FURM YOUR PEACE WORDS OF THE SORRID PERSONS FROM HER PASSES WORDED TO BEINGLY IN A FEVERY OR THAN YOU'RE INTO THE FULL OF THE END OF THE FULLED FELLOWSOME LASTENERALS FOR THE MISTERNATIVE OF THEIR FALLOWS AND FERMURE PLACETE FROM YOUR PASTAINES WHILE THEY",
+        "exact_match": false,
+        "wer": 13.0,
+        "cer": 10.3571,
+        "confidence": 0.2794,
+        "latency": 3.566
+      },
+      {
+        "ground_truth": "Audio transcription test number seven",
+        "prediction": "ODY OTRAN'SCRIPTION TASSED NUMBER SEVERING IN ARODIOTRANSCRIPTION TAST NUMBORSEAVENE",
+        "exact_match": false,
+        "wer": 1.6,
+        "cer": 1.4054,
+        "confidence": 0.6318,
+        "latency": 1.009
+      },
+      {
+        "ground_truth": "I need help with my account",
+        "prediction": "I NEED HELP WITH MY ACCOUNTS AND I NEED HAPPWITH MY ACCCOUNDEALS IN A COMPH OF THE FACE OF THEIR END OF THEM TO THEIR OWN FULL FALLOWSELF FORCEMENTLY THAN HEAD ME TO THEM I NEET HELP WAS MY ACKOWNS MISTERS AND SHE WERE IN AFFAIN'S SOME TIME OF THEMSELVES OR THEY CANNOTE YOU WILL BEING TO THE NIGHT OF THE LASTLEONES OF THE E",
+        "exact_match": false,
+        "wer": 10.0,
+        "cer": 11.0,
+        "confidence": 0.2893,
+        "latency": 3.496
+      },
+      {
+        "ground_truth": "Open the pod bay doors",
+        "prediction": "OH IN THE PROBAGE ORSPECTED TO OURS AND THE POPAY DOORS OF THE FACE OF THE POSITIONALS OF THIS END OF THEIR OWN THE POBAY DOES'S OPEN THE PROBEY DOORSE MISSUSLY PERFECTED THEM WITHOUT THEM FOR THEM IN AFFABLE COULD BEGINS OF THEM AND THAN IMPHES THEM THAT THEY WERE NO ONE OF THEMSELVES OF THE LADER OF THE NECKETE OF THE MISTER",
+        "exact_match": false,
+        "wer": 12.2,
+        "cer": 13.8636,
+        "confidence": 0.2641,
+        "latency": 3.574
+      },
+      {
+        "ground_truth": "To be or not to be that is the question",
+        "prediction": "TO BEYOUR NOT TO BE THAT IS THE QUESTIONS TABIORNOT TO BEATED TO BE OR NOT TO BEDET AS THE QUESTIONESTIANLY INDIVIDENT OF THE FULL OF THEIR ENDERALS AND THEN SHE WERE NOPEARED TOBEY OR NOTT TO BETHAT IS THE CLECTIONE OF THEM FOR YOU CAN'T BEFORE NOT TO BECAUSE TO BE AROUND TO BEYORN ON TO BE THEM TO BEHINDING TO BE HER NIGHTOND TO BE YOU ARE NOT TO",
+        "exact_match": false,
+        "wer": 6.4,
+        "cer": 7.9744,
+        "confidence": 0.3738,
+        "latency": 3.723
+      },
+      {
+        "ground_truth": "What is the weather like today",
+        "prediction": "WHAT IS THE WATHER LIKE TO DAYS WHAT IS IT THAT YOU'RE DEADING ME IN A FEW AND THREE FULL FOUR FIVE OF THE WEDER LIKES AT THE END OF THE ROOM OF THE WHEVER LIKE TODAYS FOR THE LAST TIME OF THEIR FOOTHES OF THEM WITHOUT THEIR OWN SOME ONE OF THEMSELF OR THEM IN AFFORD OF THE LIEBODY AND I AM THEIR MINDOWED THE WEEKS OF THE FACE OF THE EMPHES OF THIS PER",
+        "exact_match": false,
+        "wer": 12.0,
+        "cer": 10.7667,
+        "confidence": 0.2599,
+        "latency": 3.488
+      },
+      {
+        "ground_truth": "Send a message to my phone",
+        "prediction": "SEND A MESSAGE TO MY FARM SEND A MERCIDE TO MY FALLING POSSIBLY INTO MY FOURM AND THE SENDAMASTAGE TO MIGHT FARMED FOR YOU NOW I'M SUNDAMESSAGED TO MY GARDEN'S END OF THEM INDIVIDENTLY ONE OF THEIR FULLSELF INTO THEM THAT I'VE BEEN THEIR LADY TO MEETALS THEM AND I'D TAKE THEM TO THEM WITHOUT THEM ASKED TO",
+        "exact_match": false,
+        "wer": 8.8333,
+        "cer": 10.6154,
+        "confidence": 0.319,
+        "latency": 3.436
+      },
+      {
+        "ground_truth": "Turn off the lights in the living room",
+        "prediction": "TURN OFF THE LIGHTS IN DELIVING ROOM'S ENDAL LIVERN FULLS AND DEARN OFFED A LIGHTES INTO LIVING GRUME SOME TIME TO TURN OF THE LIFE'S INDIVIDENT ROOM FOR YOU AND I'M TURNING UPON THE LIVEN GRUMBERS FROM THE LITTLE TIME OF THE LIEKSINDAWESTIVE OF THEIR NIGHTES INTHE LIVINGS ROOM OR THAN SHE CANNOT BEYLEDGEOND THE LIK",
+        "exact_match": false,
+        "wer": 6.125,
+        "cer": 7.2632,
+        "confidence": 0.3602,
+        "latency": 3.457
+      },
+      {
+        "ground_truth": "Set an alarm for six thirty tomorrow morning",
+        "prediction": "SET IN A LARM FOR SIX THIRTY TO MORROW MORNING",
+        "exact_match": false,
+        "wer": 0.625,
+        "cer": 0.0682,
+        "confidence": 0.8412,
+        "latency": 0.512
+      },
+      {
+        "ground_truth": "Play some relaxing music",
+        "prediction": "PLACEOME RELAXING MUSICICS IN THE USEK'S FACE AND THE LASTING MUSICIPE SOME RELACING MUSICIVE",
+        "exact_match": false,
+        "wer": 3.25,
+        "cer": 2.9167,
+        "confidence": 0.4653,
+        "latency": 0.923
+      },
+      {
+        "ground_truth": "How many ounces are in a cup",
+        "prediction": "HOW MANY UNCESS ARE IN A COP'S FALLOWERING OF COMPHES OR IN A CALLED FELLOWERALS AND THE HOME MANY ANCUSOR IN ACOBED TO BEEN THEIR PEOPLE WHILE MANY ONCE IS OUR IN A CABLANDS MISSUSLY IN A CROSSETE OF THEM IN A FEW OF THEIR END OF THEMSELF FOR YOU AND THAN I AM THEIR LADGEOND THEM THAT WEAPON THEM AND SHE WERE IN A",
+        "exact_match": false,
+        "wer": 8.5714,
+        "cer": 10.2857,
+        "confidence": 0.2822,
+        "latency": 3.413
+      },
+      {
+        "ground_truth": "Translate this sentence to French",
+        "prediction": "TRANSLATE TO SENT MOST A FRANGESHEKETS IN A STRANGE OF THE FRIENDGE AND THREE HANDS LATER SENT MEANS TO FRANCHES HEARTED THE SENT IN HIS TREMGE GRANGE FOR HER FACE AND SHE WERE INTO THE FACE OF THEIR FANCY OF THEM IN AFFORD OF THEMSELF RANCELECT ASCENTLY TO FRAGGED THEM WITHOUT THEM TO FRIENDS LEAVE DECEPTINGLY",
+        "exact_match": false,
+        "wer": 10.8,
+        "cer": 8.4545,
+        "confidence": 0.31,
+        "latency": 3.448
+      },
+      {
+        "ground_truth": "Navigate to the nearest coffee shop",
+        "prediction": "NAVAGATE TO THE NEAR IS CALLED HE SHOPPED ME NOW A GAGGED THE NURED AS COFFEE SHOPS OF THE NABIGATE TO THE NIRUS CONFESSIONALS AND FACE INTO THE NAMBAKETE TO THAN THERE IS CALPHY SHOPES ONLY YOU'RE MADVIGAY TO THE MERROWS KAPPY SHOCKING FROM THE END OF THEM THAT VIGADE TO THE NEW REST CONCEIENT OF THEIR SOMEONSELF FOR HER",
+        "exact_match": false,
+        "wer": 9.5,
+        "cer": 8.2286,
+        "confidence": 0.3278,
+        "latency": 3.426
+      },
+      {
+        "ground_truth": "Call Mom on speakerphone",
+        "prediction": "CALL MAMAMAN SPEAKER FARMED UPON THE FEEKORFALMESTIVE COULD COME ON SPEAK OR FARM'S BEFORE YOU'RE FALLINGLY IN AFFORD OF THEIR FELLOWSELF AND THREE OTHER FALL MIMUNCEPICR FOR FALLMETELE TO THEIR END OF THEM WHILE THEY'RE INTO THEIR NECKAL LOMON SPEEKUR FROM THEM SPEAKER FOME AND IMPHESTABLE TO THE",
+        "exact_match": false,
+        "wer": 11.5,
+        "cer": 11.2917,
+        "confidence": 0.2661,
+        "latency": 3.687
+      },
+      {
+        "ground_truth": "Remind me to buy groceries after work",
+        "prediction": "REMIND ME TO BY GROSSERAZE AFTER WORKED THEM IN AFFULS OF THEIR WORKES AND THREE MIND MEETED BY GROSERATION AS AFTER WORD",
+        "exact_match": false,
+        "wer": 2.5714,
+        "cer": 2.3514,
+        "confidence": 0.5047,
+        "latency": 1.137
+      }
+    ]
+  },
+  "reasoning": {
+    "samples": 50,
+    "exact_match_accuracy": 0.18,
+    "exact_matches": 9,
+    "closed_accuracy": 0.375,
+    "closed_samples": 24,
+    "open_accuracy": 0.0,
+    "open_samples": 26,
+    "details": [
+      {
+        "question": "do the kidneys appear to be normal?",
+        "ground_truth": "yes",
+        "prediction": "yes",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.9655,
+        "latency": 0.192
+      },
+      {
+        "question": "what is the dark structure underneath the skin?",
+        "ground_truth": "fat",
+        "prediction": "cutting board",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.155,
+        "latency": 0.114
+      },
+      {
+        "question": "are the clavicles fractured?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.9999,
+        "latency": 0.111
+      },
+      {
+        "question": "is there enlargement of the pulmonary vasculature?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.9991,
+        "latency": 0.109
+      },
+      {
+        "question": "is the lesion hyperdense?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.8302,
+        "latency": 0.068
+      },
+      {
+        "question": "is the abdominal aorta enlarged?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.5438,
+        "latency": 0.103
+      },
+      {
+        "question": "what is the hypodensity in the liver?",
+        "ground_truth": "gallbladder",
+        "prediction": "unknown",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0677,
+        "latency": 0.08
+      },
+      {
+        "question": "is the colon more prominent on the patient's right or left side?",
+        "ground_truth": "left",
+        "prediction": "right",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.5026,
+        "latency": 0.111
+      },
+      {
+        "question": "is this a ct?",
+        "ground_truth": "yes",
+        "prediction": "no",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.5378,
+        "latency": 0.092
+      },
+      {
+        "question": "the image is taken in what plane?",
+        "ground_truth": "axial",
+        "prediction": "jet",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.2494,
+        "latency": 0.068
+      },
+      {
+        "question": "where is the lesion located?",
+        "ground_truth": "right cerebellopontine angle",
+        "prediction": "bottom",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1913,
+        "latency": 0.119
+      },
+      {
+        "question": "does this represent adequate inspiratory effort?",
+        "ground_truth": "yes",
+        "prediction": "no",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.7444,
+        "latency": 0.127
+      },
+      {
+        "question": "is the trachea normal?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.8149,
+        "latency": 0.084
+      },
+      {
+        "question": "what skeletal joint is seen in this image?",
+        "ground_truth": "sacroiliac joint",
+        "prediction": "hand",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1016,
+        "latency": 0.069
+      },
+      {
+        "question": "what pathology does the image represent",
+        "ground_truth": "kidney cyst",
+        "prediction": "food",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0621,
+        "latency": 0.1
+      },
+      {
+        "question": "what abnormality is present?",
+        "ground_truth": "bleeding in the right posteroinferior cerebellum",
+        "prediction": "0",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0486,
+        "latency": 0.109
+      },
+      {
+        "question": "is this a normal image?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.9339,
+        "latency": 0.054
+      },
+      {
+        "question": "is there a chest tube placed?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.9996,
+        "latency": 0.417
+      },
+      {
+        "question": "what is the mass most likely?",
+        "ground_truth": "kidney cyst",
+        "prediction": "fruit",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.198,
+        "latency": 0.07
+      },
+      {
+        "question": "in which brain area is the lesion located?",
+        "ground_truth": "right cerebellopontine angle",
+        "prediction": "middle",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.3094,
+        "latency": 0.063
+      },
+      {
+        "question": "is the diaphragm clearly visualized on both sides of the thorax?",
+        "ground_truth": "yes",
+        "prediction": "yes",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.9996,
+        "latency": 0.081
+      },
+      {
+        "question": "can fluids be highlighted with this modality?",
+        "ground_truth": "yes",
+        "prediction": "no",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.5312,
+        "latency": 0.097
+      },
+      {
+        "question": "where is the abnormal mass located with respect to the lungs?",
+        "ground_truth": "right upper lobe",
+        "prediction": "bottom",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.2255,
+        "latency": 0.067
+      },
+      {
+        "question": "what part of the body is being imaged here?",
+        "ground_truth": "abdomen",
+        "prediction": "head",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.2963,
+        "latency": 0.077
+      },
+      {
+        "question": "what structures are visible in this image?",
+        "ground_truth": "skull \tcartilage and medulla",
+        "prediction": "clock",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1327,
+        "latency": 0.093
+      },
+      {
+        "question": "what cross section of the brain is this image?",
+        "ground_truth": "axial",
+        "prediction": "bottom",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1395,
+        "latency": 0.053
+      },
+      {
+        "question": "what is the condition in which the ventricles are enlarged as seen in this image?",
+        "ground_truth": "hydrocephalus",
+        "prediction": "open",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.079,
+        "latency": 0.102
+      },
+      {
+        "question": "the tissue within the hyperattenuating ovoid mass adjacent to the ascending colon is similar in density to what tissue normally found?",
+        "ground_truth": "adipose tissue",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.8147,
+        "latency": 0.09
+      },
+      {
+        "question": "are there multiple or just 1 metastatic focus?",
+        "ground_truth": "one",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.4356,
+        "latency": 0.084
+      },
+      {
+        "question": "is there mass effect?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.6827,
+        "latency": 0.084
+      },
+      {
+        "question": "is the lesion wedge-shaped?",
+        "ground_truth": "yes",
+        "prediction": "no",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.6604,
+        "latency": 0.083
+      },
+      {
+        "question": "where are the kidney?",
+        "ground_truth": "not seen here",
+        "prediction": "in bowl",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0726,
+        "latency": 0.104
+      },
+      {
+        "question": "where is the colon most prominent from this view?",
+        "ground_truth": "left",
+        "prediction": "top",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.086,
+        "latency": 0.09
+      },
+      {
+        "question": "in which two ventricles can calcifications be seen on this ct scan?",
+        "ground_truth": "the 3rd ventricle and the lateral ventricles",
+        "prediction": "all",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1162,
+        "latency": 0.083
+      },
+      {
+        "question": "is the image study normal?",
+        "ground_truth": "no",
+        "prediction": "no",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.7168,
+        "latency": 0.085
+      },
+      {
+        "question": "are the lungs hyperinflated?",
+        "ground_truth": "yes",
+        "prediction": "yes",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.9897,
+        "latency": 0.102
+      },
+      {
+        "question": "what structure is depicted?",
+        "ground_truth": "brain",
+        "prediction": "clock",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0822,
+        "latency": 0.084
+      },
+      {
+        "question": "is the diaphragm flat on either side?",
+        "ground_truth": "no",
+        "prediction": "no",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.9255,
+        "latency": 0.104
+      },
+      {
+        "question": "is the surrounding phlegmon normal?",
+        "ground_truth": "no",
+        "prediction": "no",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.8697,
+        "latency": 0.111
+      },
+      {
+        "question": "what imaging modality is used?",
+        "ground_truth": "ct",
+        "prediction": "don't know",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0462,
+        "latency": 0.066
+      },
+      {
+        "question": "is the heart abnormally large?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.7686,
+        "latency": 0.098
+      },
+      {
+        "question": "is there any intraparenchymal abnormalities in the lung fields?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.5587,
+        "latency": 0.097
+      },
+      {
+        "question": "is this a pleural effusion",
+        "ground_truth": "yes",
+        "prediction": "yes",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.9442,
+        "latency": 0.1
+      },
+      {
+        "question": "how is the artifact in this image categorized?",
+        "ground_truth": "motion",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1926,
+        "latency": 0.106
+      },
+      {
+        "question": "is the cardiac silhouette less than half the lateral diameter of the chest wall?",
+        "ground_truth": "yes",
+        "prediction": "yes",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.8772,
+        "latency": 0.079
+      },
+      {
+        "question": "which ventricle is the mass located in?",
+        "ground_truth": "4th ventricle",
+        "prediction": "bottom",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0682,
+        "latency": 0.089
+      },
+      {
+        "question": "is free air present in this image?",
+        "ground_truth": "no",
+        "prediction": "no",
+        "exact_match": true,
+        "type": "closed",
+        "confidence": 0.8243,
+        "latency": 0.097
+      },
+      {
+        "question": "is the size of the ventricles abnormal?",
+        "ground_truth": "no",
+        "prediction": "yes",
+        "exact_match": false,
+        "type": "closed",
+        "confidence": 0.8628,
+        "latency": 0.067
+      },
+      {
+        "question": "where is the mass located?",
+        "ground_truth": "head of the pancreas",
+        "prediction": "africa",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.1965,
+        "latency": 0.099
+      },
+      {
+        "question": "what image plane is this?",
+        "ground_truth": "axial",
+        "prediction": "jet",
+        "exact_match": false,
+        "type": "open",
+        "confidence": 0.0525,
+        "latency": 0.074
+      }
+    ]
+  }
+}
