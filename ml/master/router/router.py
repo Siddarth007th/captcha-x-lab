@@ -47,7 +47,7 @@ class ModelManager:
     def _load_reasoning(self):
         if "reasoning" not in self.models:
             print(f"Loading Reasoning Model onto {self.device}...")
-            reasoning_ckpt = os.path.join(BASE_DIR, "checkpoints/reasoning/vilt_vqarad_pathvqa25_100pct")
+            reasoning_ckpt = "dandelin/vilt-b32-finetuned-vqa"
             self.processors["reasoning"] = ViltProcessor.from_pretrained(reasoning_ckpt)
             from transformers import ViltForQuestionAnswering
             model = ViltForQuestionAnswering.from_pretrained(reasoning_ckpt)
